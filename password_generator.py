@@ -24,22 +24,22 @@ def generate():
         label3.config(text="Your password is : "+password)
     else:
         label3.config(text="Lenght should be 8 or greater")
-    button1=Button(root,text="Close",font=("arial",20),command=stop,bg="black",fg="white")
+    button1=Button(root,text="Close",font=("arial",20),command=stop,bg="white",fg="black")
     button1.grid(row=4,column=2,padx=20,pady=20)
 
 root.title("Passowrd Generator ")
-root.config(bg="black")
+root.config(bg="white")
 root.geometry("1050x500")
 
-label1=Label(root,text="CodSoft Task",font=("arial",20),bg="black",fg="white")
+label1=Label(root,text="CodSoft Task",font=("arial",20),bg="white",fg="black")
 label1.grid(row=0,column=1,pady=20)
 
 label2=Label(root,text="Enter password length ",font=("arial",20),bg="black",fg="white")
 label2.grid(row=1,column=0,padx=20,pady=20)
-entry=Entry(root,font=("arial",20),bg="black",fg="white")
+entry=Entry(root,font=("arial",20),bg="white",fg="black")
 entry.grid(row=1,column=1,padx=20,pady=20)
-button=Button(root,text="Generate password",font=("arial",20),command=generate,bg="black",fg="white")
+button=Button(root,text="Generate password",font=("arial",20),command=generate,bg="white",fg="black")
 button.grid(row=2,column=1,padx=20,pady=20)
-label3=Label(root,text="",font=("arial",20),bg="black",fg="white")
+label3=Label(root,text="",font=("arial",20),bg="white",fg="black")
 label3.grid(row=3,column=1,padx=20,pady=20)
 root.mainloop()
